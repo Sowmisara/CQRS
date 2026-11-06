@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="16.2.0" />
+    <PackageReference Include="MediatR" Version="10.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EmployeeManagement.Application.Model\EmployeeManagement.Application.Model.csproj" />
+    <ProjectReference Include="..\EmployeeManagement.Infrastructure\EmployeeManagement.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Employees\Query\" />
+  </ItemGroup>
+
+</Project>
